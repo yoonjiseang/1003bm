@@ -1,0 +1,59 @@
+#section_reserv .wrap_center .sec2_top_con{
+    display: flex;
+    justify-content: center;
+}
+#section_reserv .wrap_center .sec2_top_con .reserv_bg1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section_reserv .wrap_center .sec2_top_con .top_con_left{
+    position: relative;
+    width: 100%;
+}
+#section_reserv .wrap_center .sec2_top_con .top_con_left img{
+    position: absolute;
+    /* width: 100%; */
+    z-index: -1;
+    top: -240px;
+    left: -150px;
+}
+#section_reserv .wrap_center .sec2_top_con .top_con_right{
+    width: 800px;
+    flex: none;
+    text-align: center;
+    margin-right: 80px;
+}
+#section_reserv .wrap_center .sec2_top_con .top_con_right .tit{
+    margin-top: -50px;
+}
+#section_reserv .tit img{
+    margin-bottom: 48px;
+}
+#section_reserv .wrap_center .con h5{
+    font-size: 25px;
+    color: #a79060;
+    line-height: 29.85px;
+    font-family: 'JejuMyeongjo',serif;
+}
+#section_reserv .wrap_center .con h5 span{
+    font-family: 'JejuMyeongjo',serif;
+    color: #857148;
+}
+#section_reserv .input_wrap{
+    margin-bottom: 32px;
+    margin-top: 12px;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+#section_reserv .input_wrap input{
+    font-size: 20px;
+    width: 330px;
+    color: #f29ca9;
+    background: #fff0;
+    border: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+    font-family: 'JejuMyeongjo' ,serif;
+}

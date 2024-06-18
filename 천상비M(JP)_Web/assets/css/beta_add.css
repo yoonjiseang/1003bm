@@ -1,0 +1,54 @@
+.beta_popup{
+    margin-top: 20px;
+}
+.button a{
+    position: flex;
+}
+.pop_btns div{
+    position: fixed;
+}
+.pop_btn1{
+    margin-top: -490px;
+    margin-left: 100px;
+}
+.os li{
+    position: fixed;
+    margin-top: -385px;
+    
+}
+.radio1{
+    margin-left: 100px;
+}
+.radio2{
+    margin-left: 200px;
+}
+.pop_btn1 li{
+    list-style: none;
+}
+.input_wrap input{
+    position: fixed;
+    width: 450px;
+    height: 35px;
+    margin-left: -460px;
+    margin-top: 3px;
+    outline: none;
+    border: none; 
+    background: transparent;
+    font-size: 20px;
+    color: rgb(146, 146, 146);
+}
+.input_wrap{
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 95px;
+}
+.modal_step_open3{
+    position: fixed;
+    margin-top: -85px;
+    margin-left: 200px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 900px){
+    
+}

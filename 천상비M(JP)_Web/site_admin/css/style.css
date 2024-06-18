@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url("default.css");
+@import url("jquery.treeview.css");
+
+/* layout */
+#wrap {position:relative; height:auto; width:100%; overflow:hidden; min-width:1300px; background:url(../images/bg_left01.png) repeat-y left top;}
+#loginWrap {position:relative; height:100%; width:100%; overflow:hidden; min-width:1300px;}
+#popWrap {position:relative; height:100%; width:100%; overflow:hidden;}
+#leftArea {float:left; position:relative; width:230px; height:auto; overflow:hidden; background:#424242; padding-bottom:100px;}
+#container {position:relative; overflow:hidden; background:#FFF; padding-bottom:60px; margin-left:230px;}
+#footer {position:fixed; bottom:0; clear:both; width:100%; height:51px; border-top:2px solid #525252; line-height:51px; font-size:11px;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(#e8e8e8 0%, #fbfbfb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e8e8), color-stop(100%, #fbfbfb));
+	background: -webkit-linear-gradient(#e8e8e8 0%, #fbfbfb 100%);
+	background: linear-gradient(#e8e8e8 0%, #fbfbfb 100%);
+}
+.contents {position:relative; padding:20px 12px 12px 12px;}
+.conArea {position:relative; height:auto; overflow:hidden;}
+.conArea h2 {display:block; position:relative; height:59px; line-height:59px; font-size:14px; letter-spacing:-1px; color:#373737; background:url(/site_admin/images/bullet_h2.png) no-repeat left 20px; padding-left:24px;}
+.conArea h2.bdrBtm {border-bottom:1px solid #ccc;}
+.gridTable {display:block; width:100%; background:#ccc; height:auto; overflow:hidden;}
+.chartTable {display:block; background:#f3f3f3; min-height:150px; border:1px solid #ccc; height:auto; overflow:hidden;}
+body.login {background:#efefef;}
+
+/* Login */
+.bgLogin {position:relative; width:377px; height:100%; background:#363636; margin:0 auto;}
+.bgLogin .loginBox {position:relative; margin-top:0px; padding-top:105px;}
+.loginBox .loginLogo {background:#363636; text-align:center; padding-top:0px;}
+.loginBox .loginForm {position:relative; width:303px; height:auto; margin:0 auto; padding-top:38px; text-align:center;}
+
+/* Left */
+.logo {position:relative; text-align:center; background:#FFF; padding:0px 0;}
+.logo img {width:60%;}
+.infoUsr {position:relative; background:#363636; color:#FFF; border-bottom:1px solid #888;}
+.infoUsr p.greeting {padding:22px 15px 10px 15px;}
+.leftMenuSet {position:relative;}
+.leftMenuSet h2 {display:block; width:207px; margin:0 auto; height:24px; color:#FFF; font-family:Verdana; font-weight:normal; padding-top:31px; background:url(/site_admin/images/ar_cate.gif) no-repeat right 35px;}
+.leftMenuSet .bgLeftMenu {display:block; width:205px; height:100%; min-height:300px; margin:0 auto; height:auto; overflow:hidden; background:#efefef; border:1px solid #333; border-radius:3px;}
+.leftMenuSet .bgLeftMenu .lmSet {padding:16px;}
+.lmSet li {display:block; border-bottom:1px solid #ccc; text-align:right; height:30px; line-height:30px;}
+.lmSet li a {color:#333; padding-right:10px; display:block;}
+.lmSet li a:hover {color:#000; font-weight:bold; padding-right:10px;
+	background: #e0edf7;
+	background: -moz-linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #e0edf7));
+	background: -webkit-linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+	background: linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+}
+.lmSet li.on a {color:#000; font-weight:bold; padding-right:10px; display:block;
+	background: #e0edf7;
+	background: -moz-linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #e0edf7));
+	background: -webkit-linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+	background: linear-gradient(#FFFFFF 0%, #e0edf7 100%);
+}
+
+/* tabMenu */
+.tabMenu {position:relative; display:block; height:49px; background:url(/site_admin/images/bg_tab.png) repeat-x; padding-left:12px;}
+.tabMenu li {float:left; height:36px; line-height:38px; margin-top:12px; margin-right:4px; color:#d2d3d3;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(#e8e8e8 0%, #7d7d7d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7d7d7d), color-stop(100%, #6d6d6d));
+	background: -webkit-linear-gradient(#7d7d7d 0%, #6d6d6d 100%);
+	background: linear-gradient(#7d7d7d 0%, #6d6d6d 100%);
+	border-left:1px solid #2d2d2d; 
+	border-top:1px solid #2d2d2d; 
+	border-right:1px solid #2d2d2d; 
+	border-radius:3px 3px 0px 0px;
+}
+.tabMenu li a {display:block; color:#d2d3d3; padding:0 15px;}
+
+.tabMenu li a:hover {
+	color:#000;
+	background: #f7f7f7;
+	background: -moz-linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #FFFFFF));
+	background: -webkit-linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	background: linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	border-radius:3px 3px 0px 0px;
+}
+
+.tabMenu li.on {
+	background: #f7f7f7;
+	background: -moz-linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #FFFFFF));
+	background: -webkit-linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	background: linear-gradient(#f7f7f7 0%, #FFFFFF 100%);
+	border-left:1px solid #2d2d2d; 
+	border-top:1px solid #2d2d2d; 
+	border-right:1px solid #2d2d2d; 
+	border-radius:3px 3px 0px 0px;
+}
+
+.tabMenu li.on a {color:#000;}
+
+/* searchArea */
+.searchArea {position:relative; border:1px solid #c3c3c3; height:50px; line-height:50px;
+	background: #ededed;
+	background: -moz-linear-gradient(#FFFFFF 0%, #ededed 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFFFFF), color-stop(100%, #ededed));
+	background: -webkit-linear-gradient(#FFFFFF 0%, #ededed 100%);
+	background: linear-gradient(#FFFFFF 0%, #ededed 100%);
+}
+.searchArea table {padding:0; margin:0;}
+.searchArea th, .searchArea td {line-height:50px; color:#373737;}
+.searchArea select {padding:4px;}
+
+.conSingle {clear:both; display:block; height:auto; overflow:hidden;}
+.conSingle h2 {clear:both; display:block; height:30px; line-height:30px; background:url(/site_admin/images/bullet_red.png) no-repeat left 10px; padding-left:15px; color:#000; font-weight:normal; font-size:12px; color:#333; letter-spacing:0px;}
+.conSingle table {padding:0; margin:0; width:100%;}
+.conSingle th, .conSingle td {padding:8px; border:1px solid #ccc; text-align:center;}
+.conSingle td p {margin-bottom:8px;}
+.conSingle td p:last-child {margin-bottom:0px;}
+.conSingle th {background:#ecf2f7; color:#555;}
+.conSingle select {border:1px solid #ddd; padding:4px;}
+.conSingle li {float:left; padding:5px 10px;}
+
+/* category */
+.cateList {float:left; width:33%; height:auto; overflow:hidden;}
+.cateList .cateListBox {padding:20px; color:#FFF !important; text-align:left; background:#7b7b7b; border:1px solid #4b4b4b; border-radius:3px;}
+.cateList .cateListBox a {color:#FFF;}
+.cateManage {float:left; width:67%; position:relative;}
+.cateManage .cateManageBox {position:relative;}
+.confirmTable {position:relative;}
+.confirmTable table {padding:0; margin:0; width:100%;}
+.confirmTable th, .confirmTable td {padding:8px; border:1px solid #c8a881; text-align:center;}
+.confirmTable th {background:#f0d372;}
+.confirmTable select {border:1px solid #ddd; padding:4px;}
+
+/* cate */
+.cateListTab {display:block; clear:both; position:relative; height:40px; border-bottom:1px solid #ccc;}
+.cateListTab li {float:left; height:39px; line-height:39px; font-size:12px; border:1px solid #ccc; margin-right:-1px; background:#f2f2f2;}
+.cateListTab li a {display:block; padding:0 30px;}
+.cateListTab li a:hover {background:#FFF; border-bottom:1px solid #FFF;}
+.cateListTab li.on a {background:#FFF; border-bottom:1px solid #FFF; font-weight:bold;}
+
+.cateDpt2 {float:left; width:25%; height:auto; overflow:hidden; margin-right:1%;}
+.cateDpt3 {float:left; width:74%; height:auto; overflow:hidden;}
+.cateDpt2 h2, .cateDpt3 h2 {display:block; margin-bottom:10px; color:#333; font-size:12px; background:none; padding:0; height:30px; line-height:30px;}
+
+.cateDpt2 .listD2 {display:block; background:#f2f2f2; height:auto; overflow:hidden; padding:0px; border-radius:5px; border:1px solid #ccc; box-sizing:border-box;}
+.cateDpt2 .listD2 li {display:block; height:auto; overflow:hidden; border-bottom:1px dotted #777; line-height:30px; position:relative;}
+.cateDpt2 .listD2 li a {display:block; padding-left:10px; font-weight:bold;}
+.cateDpt2 .listD2 li a:hover {background:#666 url(../images/ar_cate01.gif) no-repeat 95% center; color:#FFF; font-weight:bold;}
+.cateDpt2 .listD2 li.on a {background:#666 url(../images/ar_cate01.gif) no-repeat 95% center; color:#FFF; font-weight:bold;}
+.cateDpt2 .listD2 li:last-child {border-bottom:0px;}
+
+.cateDpt2 .listD2 li li {display:block; background:#888 !important; border-bottom:1px dotted #aaa;}
+.cateDpt2 .listD2 li li a {display:block; padding:0px 10px; color:#FFF; font-weight:normal !important;}
+.cateDpt2 .listD2 li li a:hover {background:#777;}
+.cateDpt2 .listD2 li li.on a {background:#777; font-weight:bold !important;}
+
+.cateDpt3 .listD3 {display:block; background:#FFF; height:auto; overflow:hidden; padding:0px; border-radius:5px; border:1px solid #ccc; box-sizing:border-box;}
+.cateDpt3 .listD3 li {display:block; height:30px; border-bottom:1px dotted #777; line-height:30px;}
+.cateDpt3 .listD3 li a {display:block; padding-left:10px;}
+.cateDpt3 .listD3 li a:hover {background:#f2f2f2 url(../images/ar_cate01.gif) no-repeat 98% center; color:#000;}
+.cateDpt3 .listD3 li.on a {background:#f2f2f2 url(../images/ar_cate01.gif) no-repeat 98% center; color:#000;}
+.cateDpt3 .listD3 li:last-child {border-bottom:0px;}
+.cateDpt3 .listD3 table {padding:0; margin:0; width:100%;}
+.cateDpt3 .listD3 th, .cateDpt3 .listD3 td {border-bottom:1px solid #ccc; padding:5px; text-align:center;}
+.cateDpt3 .listD3 th {background:#f3f3f3; height:36px;}
+.cateDpt3 .listD3 td.end {border-bottom:none;}
+
+.innerBox {display:block; height:440px; overflow-y:scroll; overflow:hidden; background:#f8f8f8;}
+.innerBox li {display:block !important; width:100%; margin-bottom:0px; padding-bottom:10px; border-bottom:1px solid #ccc; text-align:left;}
+
+.innerBoxCon {display:block; height:200px; overflow-y:scroll; overflow:hidden; background:#f8f8f8;}
+.innerBoxCon li {display:block !important; width:100%; margin-bottom:0px; padding-bottom:10px; border-bottom:1px solid #ccc; text-align:left;}
+
+.selCon {display:block; padding:10px;}
+.cateTxt {font-size:11px; color:#777;}
+.cateBook {font-size:14px; color:#000; font-weight:bold;}
+
+/*Btn*/
+.btnArea {clear:both; position:relative; height:auto; overflow:hidden;}
+.btnUsr a {display:inline-block; background:#777; color:#FFF; font-size:11px; height:24px; line-height:28px; letter-spacing:-1px; padding:0px 12px; border-radius:2px;}
+.btnUsr a:hover {background:#000;}
+
+.btnSearch a {display:inline-block; background:#7a8599; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; padding:0px 12px; border-radius:2px;}
+.btnSearch a:hover {background:#414752;}
+
+.btnUsrNew a {display:inline-block; background:#f6aa25; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; padding:0px 12px; border-radius:2px;}
+.btnUsrNew a:hover {background:#ed7105;}
+
+.btnSave a {display:inline-block; background:#f16f52; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; padding:0px 12px; border-radius:2px;}
+.btnSave a:hover {background:#e4301a;}
+
+.btnModify a {display:inline-block; background:#7a8599; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; padding:0px 12px; border-radius:2px;}
+.btnModify a:hover {background:#414752;}
+
+.btnCreat a {display:inline-block; background:#a1bd02; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; width:100%; border-radius:2px; text-align:center;}
+.btnCreat a:hover {background:#4e5b01;}
+
+.btnUpload a {display:inline-block; background:#a1bd02; color:#FFF; font-size:12px; font-weight:bold; height:27px; line-height:29px; letter-spacing:-1px; padding:0px 12px; border-radius:2px; text-align:center;}
+.btnUpload a:hover {background:#4e5b01;}
+
+.btnFile a {display:inline-block; background:#f48400; color:#FFF; font-size:12px; font-weight:bold; height:24px; line-height:24px; letter-spacing:-1px; text-align:center; padding:0px 12px; border:1px solid #f48400; border-radius:3px; cursor:pointer;}
+.btnDel a {display:inline-block; background:#888; color:#FFF; font-size:12px; font-weight:bold; height:24px; line-height:24px; letter-spacing:-1px; text-align:center; padding:0px 12px; border:1px solid #888; border-radius:3px; cursor:pointer;}
+.btnBlack a {display:inline-block; background:#000; color:#FFF; font-size:12px; font-weight:bold; height:20px; line-height:22px; letter-spacing:-1px; text-align:center; padding:0px 12px; border:1px solid #000; border-radius:3px; cursor:pointer;}
+
+.btnLogin a {display:inline-block; background:#7098ca; color:#FFF; font-size:14px; font-weight:bold; height:41px; line-height:41px; letter-spacing:-1px; text-align:center; width:293px; border:1px solid #7098ca; border-radius:30px;}
+.btnGray_s a {display:inline-block; width:50px; height:28px; line-height:30px; text-align:center; background:#656565; color:#FFF; font-size:12px; border-radius:3px;}
+
+.btnWrite a {display:inline-block; padding:0 20px; height:32px; line-height:32px; text-align:center; background:#32679f; color:#FFF; font-size:12px; border-radius:3px;}
+.btnWrite a:hover {background:#0a2a63;}
+
+/* input */
+.inputLogin {width:273px; height:41px; padding:0 10px; background:#FFF; color:#473829; line-height:43px; border-radius:4px; border:1px solid #000; font-weight:bold;}
+.inputSearch {height:25px; border:1px solid #ddd; text-align:center; color:#888888; font-weight:bold; line-height:25px;}
+.inputUsr {height:25px; border:1px solid #ddd; color:#888888; font-weight:bold; line-height:25px; padding-left:10px;}
+.inputCate {height:30px; border:1px solid #dfdfdf; background:#f6f6f6; color:#bc4b13; font-weight:bold; line-height:30px; padding-left:0px; text-align:center;}
+.inputForm {height:40px; border:1px solid #ddd; color:#888888; font-weight:bold; line-height:25px; padding-left:10px;}
+
+.inputComm {height:25px; border:1px solid #ddd; color:#888888; line-height:25px; padding-left:10px; box-sizing:border-box;}
+textarea {border:1px solid #ddd; color:#888888; line-height:18px; padding-left:10px; box-sizing:border-box;}
+
+/* bullet */
+.bullet_red {background:url(/site_admin/images/bullet_red.png) no-repeat left 2px; padding-left:13px;}
+.bullet_gray {background:url(/site_admin/images/bullet_gray.png) no-repeat left 2px; padding-left:13px;}
+
+/* modalPop */
+.overlay {width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1000; display: none;}
+.modal {display: none; background: #FFF; padding: 0px;; overflow: auto; z-index: 1001; position: absolute; width:600px; min-height: 200px; border:4px solid #000; border-radius:3px;}
+.uploadPop {position:relative; height:auto; overflow:hidden; padding:15px;}
+.uploadPop h2 {display:block; position:relative; height:30px; line-height:30px; font-size:12px; letter-spacing:0px; color:#373737; background:url(/site_admin/images/bullet_h2.png) no-repeat left 6px; padding-left:24px; padding-bottom:10px; border-bottom:1px solid #ccc;}
+
+.uploadForm {padding:20px; width:80%; margin:0 auto;}
+.uploadForm p {line-height:20px;}
+
+.closeBtn {cursor:pointer; position:absolute; right:0; top:0; height:27px; line-height:29px; background:#666; padding:0 12px; color:#FFF; font-size:12px; text-align:center; border-radius:3px; font-weight:normal;}
+/* modalPop */
+
+/* bbs - paging */
+#pageArea {clear:both; position:relative; width:100%; text-align:center;}
+#pageArea .paginate {}
+#pageArea .paginate a,
+#pageArea .paginate strong {display:inline-block; padding:8px 15px; font-size:13px; border:1px solid #d4d4d4; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px;}
+#pageArea .paginate a {color:#333; text-decoration:none;}
+#pageArea .paginate strong {color:#fff; border:1px solid #5e5e5e; background:#5e5e5e;}
+#pageArea .paginate a:hover {color:#fff; border:1px solid #5e5e5e; background:#5e5e5e;}
